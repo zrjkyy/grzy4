@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>月色真美,风也温柔</title>
+    <meta name="description" content="KZHomePage是一款二次元卡片式个人网站主页模板">
+    <meta name="keywords" content="小菜的主页,个人主页,程序员">
+    <link rel="icon" type="image/ico" href="https://sdn.geekzu.org/avatar/4cc893d113dd74ceca73f9863f2c5446/">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/APlayer.min.css">
+    <style>
+        body{
+            /*背景图片URL 可使用随机图片API */
+            background-image: url("http://www.dmoe.cc/random.php"); 
+        }
+        .photo-bg {
+            /* 卡片左侧图片 */
+            background-image: url("static/image/629b0a2750921.jpg");
+        }
+    </style>
+    <script>
+        // 音乐设置
+        let meting_music_api = "https://api.mizore.cn/meting/api.php";// meting api
+        let music_server = "netease"; // 音乐服务：网易云 netease 参见 meting api支持的服务
+        let music_type = "playlist"; // 歌曲类型：歌单playlist 单首歌曲 song  专辑 album
+        let music_id = "20173709"; // 歌单ID或歌曲ID或者专辑ID 20173709 29732992
+        let music_order = "random"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
+        let music_mini = false; // mini模式 吸底模式开启后此选项实效 true / false
+        let music_fixed = false; // 吸底模式
+        let music_volume = 0.7; // 默认音量
+        let music_autoplay = false; // 自动播放
+        let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
+        // 一言设置
+
+    
+    </script>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <h1>小菜</h1>
+                <p>很荣幸您能访问我的网站！ 目前我仍在学习中，每天抽出时间来看书学习，励志成为一个技术很牛的程序员。
+                </p>
+                <p id="hitokoto_text">:D 一言获取中...</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+                <!-- <audio muted></audio> -->
+                <div id="aplayer-inner" class="aplayer"></div>
+
+                <!-- <h4 class="mt-4">or, keep your eyes on</h4> -->
+                <ul class="social mt-1">
+                    <li><a href="javascript:;"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:;"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:;"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li>
+                </ul>
+                
+                <!-- <div id="aplayer" class="aplayer" data-order="random" data-id="20173709" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.8"></div> -->
+                <footer>
+                    <p>Copyright 2018 - Now <a href="javascript:;" target="_blank"></a> <a href="javascript:;" target="_blank">豫ICP备00000000号-1</a>
+                        <br>Mod by
+                        <a href="javascript:;" target="_blank" rel="">小菜</a>
+                        <a href="javascript:;" target="_blank" rel="nofollow"><img src="static/picture/9991d2344d2ca.png" style="width:50px;"></a>
+
+                    </p>
+                    
+
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- aplayer -->
+    <div id="aplayer-fixed" class="aplayer"></div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/APlayer.min.js"></script>
+    <script src="static/js/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <script src="static/js/popper.min.js"></script>
+    <script defer="" src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/layer.js"></script>
+    <!-- <script src="./static/main.js"></script> -->
+    <script src="static/js/main.js"></script>
+    <script>
+        //弹出一个页面层
+        $('#kaygb-blog').on('click', function() {
+            layer.open({
+                type: 2,
+                title: 'Blog',
+                shadeClose: true,
+                anim:4,
+                closeBtn: 2,
+                isOutAnim: false,
+                area: ['80%', '90%'],
+                content: '//www.kezez.com/'
+            });
+        });
+        $('#kaygb-mail').on('click', function() {
+            layer.open({
+                type: 2,
+                title: 'Blog',
+                shadeClose: true,
+                anim:4,
+                closeBtn: 2,
+                isOutAnim: false,
+                area: ['80%', '90%'],
+                content: '//mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=hi@kezez.com'
+            });
+        });
+    </script>
+
+</body></html>
